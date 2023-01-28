@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8" />
+    <title>Piese of Cake</title>
+
+    <!--Підключаємо шрифти-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Open+Sans:wght@300&family=Paytone+One&family=Roboto&display=swap" rel="stylesheet">
+
+
+   <!--Нормалай--> 
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
+   
+   <!--Підключаємо стилі css-->
+    <link rel="stylesheet" href="./css/main.css"/>
+    <link rel="stylesheet" href="./css/nav.css"/>
+    <link rel="stylesheet" href="./css/header.css"/>
+    <link rel="stylesheet" href="./css/services.css"/>
+    <link rel="stylesheet" href="./css/about.css"/>
+    <link rel="stylesheet" href="./css/reviews.css"/>
+    <link rel="stylesheet" href="./css/footer.css"/>
+    <link rel="stylesheet" href="./css/contacts.css"/>
+    <link rel="stylesheet" href="./css/form.css"/>
+  </head>
+  <body>
+    <!--Верхня панель навігації-->
+   <div class="bg-nav"> <nav class="conteiner-nav nav">
+      <!--Логотип робимо як посилання.
+            Коли будемо натискати на логотип нас має перекидати на першу сторінку.
+            Якщо запишемо href="#" - це означає, що перекидає на цю саму сторінку на початок.
+            Якщо записати href="./index.html" - це означає, що перекидає на сторінку з назвою index.html
+            (у нашому випадку це головна сторінка)-->
+      <a href="./index.html" class="logo">
+        <img src="./images/logo.png" alt="Логоип сайту" width="230px"/>
+      </a>
+
+      <!--Головне меню сайту.
+            Робимо через невпорядкований список, так як у нас 4 однотипні елементи.
+            Всі елементи списку будуть посиланнями, які ведуть на відповідні розділи на сторінці.
+            Тобто, коли будемо натискати на пунк меню, нас буде перекидати на початок цього розділу на сторінці.
+            Для цього використаємо посилання-якір href="#services", де # - це наш якір, 
+            a services - це імʼя нашого розділу, яке ми задаємо у самому розділі через id-->
+      <ul class="menu">
+        <li><a href="#services" class="menu-items margin">Services</a></li>
+        <li><a href="#advantages" class="menu-items margin">Advantages</a></li>
+        <li><a href="#reviews" class="menu-items margin">Reviews</a></li>
+        <li><a href="#contacts" class="menu-items margin">Contacts</a></li>
+      </ul>
+
+      <!--Контакти зверху.
+            Робимо через невпорядкований список, так як у нас 2 однотипні елементи.-->
+      <ul class="nav-contacts">
+        <!--Коли натискаємо на номер телефону повинен відразу здійснюватися дзвінок. 
+                Це називається посилання на телефонний номер-->
+        <li class="contacts-items">
+          <a href="tel:+380001112233" class="contacts-items-link ">
+            <!--Перед номером телефону і поштою є іконка svg.
+                    Її всавляємо наступним способом.
+                    Тег div використовуємо, щоб був кружечок навколо іконки-->
+          
+            +38 (000) 111 22 33</a
+          >
+        </li>
+        <!--Коли натискаємо на електронну пошту повинен відразу перекидати на написання електронного листа. 
+                Це називається посилання на адресу електронної пошти.-->
+        <li >
+          <a href="mailto:cake@veronika.com" class="contacts-items-link">
+           
+            cake@veronika.com</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+    <!--Хедер або шапка сайту.-->
+    <header>
+      <div class="slider-container">
+        <div class="mySlides fade">
+          <img src="./images/slide1.jpg" style="width: 100%;">
+          <div class="text-conteiner">
+          <h1>
+            <span> Welcome to</span>
+            <br>PIECE OF CAKE
+          </h1>
+          <h2>
+            A HTML Template with the perfect design for your website, It Includes beautiful ilustrations and useful features.
+          </h2>
+          <div class="header-btn">
+          <a href="#form" class="header-btn-text">Send Message</a>
+        </div>
+          </div>
+        </div>
+
+
+        <div class="mySlides fade">
+          <img src="./images/slide2.jpg" style="width: 100%;">
+          <div class="text-conteiner">
+          <h1>
+            <span> Welcome to</span>
+            <br>PIECE OF CAKE
+          </h1>
+          <h2>
+            A HTML Template with the perfect design for your website, It Includes beautiful ilustrations and useful features.
+          </h2>
+          <div class="header-btn">
+            <a href="#form" class="header-btn-text">Send Message</a>
+          </div>
+          </div>
+        </div>
+
+        <div class="mySlides fade">
+          <img src="./images/slide3.jpg" style="width: 100%;">
+          <div class="text-conteiner">
+          <h1>
+            <span> Welcome to</span>
+            <br>PIECE OF CAKE
+          </h1>
+          <h2>
+            A HTML Template with the perfect design for your website, It Includes beautiful ilustrations and useful features.
+          </h2>
+          <div class="header-btn">
+            <a href="#form" class="header-btn-text">Send Message</a>
+          </div>
+          </div>
+        </div>
+  <!-- Кнопки наступного та попереднього -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+<br>
+          </div>
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    
+    </header>
+
+    <!--Інформація на сторінці записується у тезі main-->
+    <main>
+      <!--Розділ Our Services.
+            Кожен розділ створюємо окремо тегом section.
+            Кожному розділу присвоюємо імʼя через id-->
+      <section id="services" class="conteiner">
+        <!--Назву розділу створюємо через заголовок h3,
+                тому що це заголовок, а заголовкі h1 та h2 ми уже використали-->
+        <h3>Our Services</h3>
+
+        <!--Вставляємо зображення тегом img.
+                Так як у нас 4 зображення і це однотипні елементи, 
+                то використаємо невпорядкований список, 
+                де кожен елемент списку - це зображення-->
+                <ul class="img-section">
+          <!--У тезі img крім атрибута src, який вказує шлях, 
+                    обовʼязково прописуємо атрибути alt (альтернативний текст), 
+                    width (ширина зображення) та height (висота зображення)-->
+                    <li class="li-section"> <div class="conteiner1">
+                      <img src="./images/service1.jpg" alt="" width="270" height="270"/>
+                      <div class="overlay1">
+                          <div class="text-position">
+                            <h5>Weddings</h5>
+                          <p class="subtitle-text">
+                            Lorem Ipsuet ipsu Ibu lum orci eget, viverra elit. Aliquam erat volut pat phas ellus ac sodales felis tiam non.                          </p>
+                      </div>
+                      </div>
+                       </div>
+                  </li>
+          
+                  <li  class="li-section"> <div class="conteiner1">
+                      <img src="./images/service2.jpg" alt="" width="270" height="270"/>
+                      <div class="overlay1">
+                          <div class="text-position">
+                            <h5>Corporate Events</h5>
+                          <p class="subtitle-text">
+                            Lorem Ipsuet ipsu Ibu lum orci eget, viverra elit. Aliquam erat volut pat phas ellus ac sodales felis tiam non.                          </p>
+                      </div>
+                      </div>
+                       </div>
+                  </li>
+          
+                  <li  class="li-section"> <div class="conteiner1">
+                      <img src="./images/service4.jpg" alt="" width="270" height="270"/>
+                      <div class="overlay1">
+                          <div class="text-position">
+                            <h5>Gourmet</h5>
+                          <p class="subtitle-text">
+                            Lorem Ipsuet ipsu Ibu lum orci eget, viverra elit. Aliquam erat volut pat phas ellus ac sodales felis tiam non.                          </p>
+                      </div>
+                      </div>
+                       </div>
+                       </li>
+          
+                       <li  class="li-section"> <div class="conteiner1">
+                          <img src="./images/service6.jpg" alt="" width="270" height="270"/>
+                          <div class="overlay1">
+                              <div class="text-position">
+                                <h5>Pastries</h5>
+                              <p class="subtitle-text">
+                                Lorem Ipsuet ipsu Ibu lum orci eget, viverra elit. Aliquam erat volut pat phas ellus ac sodales felis tiam non.
+                              </p>
+                          </div>
+                          </div>
+                           </li>
+              </ul>
+            </div>
+      </section>
+    </div>
+
+      <!--Розділ Why Chose Us?-->
+      <section id="advantages" class="bg-section">
+        <div class="conteiner">
+        <h3>About Us</h3>
+
+        <!--Робимо карточку в розділі.
+            Карточок є 4 і це однотипні елементи, тому використовуємо невпорядкований список-->
+        <ul class="about-items">
+          <!--Кожен елемент списку - це карточка-->
+          <li class="about-li">
+            <!--Вставляємо іконку в кружечку-->
+            <div>
+                <img src="./images/img1.png" alt="" width="100"/>
+            </div>
+            <!--Заголовок карточки робимо тегом h4-->
+            <h4>made with love</h4>
+            <!--Nекст карточки робимо абзацом - це тег p-->
+            <p class="about-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum.
+            </p>
+          </li>
+
+          <li class="about-li">
+            <div>
+              <img src="./images/img2.png" alt="" width="100"/>
+            </div>
+            <h4>seasonal pastries</h4>
+            <p  class="about-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum.
+            </p>
+          </li>
+
+          <li class="about-li">
+            <div>
+              <img src="./images/img3.png" alt="" width="100"/>
+            </div>
+            <h4>event catering</h4>
+            <p  class="about-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum.
+            </p>
+          </li>
+
+          <li class="about-li">
+            <div>
+                <img src="./images/img4.png" alt="" width="100"/>
+            </div>
+            <h4>gluten free options</h4>
+            <p  class="about-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum.
+            </p>
+          </li>
+        </ul>
+      </div>
+      </section>
+
+      <!--Розділ Reviews-->
+      <div class="bg-reviews">
+      <section id="reviews" class="conteiner">
+        <h3 class="text-color">WHAT OUR CLIENTS SAY</h3>
+
+        <!--Карточки робимо невпорядкованим списком-->
+        <ul class="list-flex">
+          <li class="reviews-li">
+            <p class="reviews-text">              
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed accumsan diam. Suspendisse molestie nibh at tempor mollis. Integer aliquet facilisis felis, ac porta est cursus et. Vestibulum sollicitudin nisl ut urna egestas faucibus.
+            </p>
+            <p class="sub-reviews">Lana King</p>
+          </li>
+
+          <li class="reviews-li">
+            <p class="reviews-text">              
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed accumsan diam. Suspendisse molestie nibh at tempor mollis. Integer aliquet facilisis felis, ac porta est cursus et. Vestibulum sollicitudin nisl ut urna egestas faucibus.
+            </p>
+            <p class="sub-reviews">Jonas Smith</p>
+          </li>
+
+          <li class="reviews-li">
+            <p class="reviews-text">              
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed accumsan diam. Suspendisse molestie nibh at tempor mollis. Integer aliquet facilisis felis, ac porta est cursus et. Vestibulum sollicitudin nisl ut urna egestas faucibus.
+            </p>
+            <p class="sub-reviews">Maria Silva</p>
+          </li>
+
+          <li class="reviews-li">
+            <p class="reviews-text">              
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed accumsan diam. Suspendisse molestie nibh at tempor mollis. Integer aliquet facilisis felis, ac porta est cursus et. Vestibulum sollicitudin nisl ut urna egestas faucibus.
+            </p>
+            <p class="sub-reviews">Jone Doe</p>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+      <!--Розділ Contacts-->
+  <section id="contacts" class="bg-section" >
+    <div class="conteiner">
+        <h3>Contacts</h3>
+
+        <!--Іконки з контактами зробимо невпорядкованим списком-->
+        <ul class="contacts-flex" >
+          <li class="contacts-items">
+            <div class="border-icon">
+              <object
+                type="image/svg+xml"
+                data="map.svg"
+                width="20"
+                height="20"
+              >
+                <img src="./images/map.svg" alt="" width="20" height="20" />
+              </object>
+            </div>
+            <div>
+
+              <p class="contacts-text-main">Our Office</p>
+              <p class="contacts-text">Ukraine, Lwiw</p>
+            </div>
+          </li>
+
+          <li class="contacts-items">
+            <div  class="border-icon">
+              <object
+                type="image/svg+xml"
+                data="phone.svg"
+                width="20"
+                height="20"
+              >
+                <img src="./images/phone.svg" alt="" width="20" height="20" />
+              </object>
+            </div>
+            <div>
+              <p class="contacts-text-main">Contact Number</p>
+              <a class="contacts-text" href="tel:+380001112233" style="color:#000" class="contacts-items-link ">+38 (000) 111 22 33</a>
+            </div>
+          </li>
+
+          <li class="contacts-items">
+            <div  class="border-icon">
+              <object
+                type="image/svg+xml"
+                data="mail_2.svg"
+                width="20"
+                height="20"
+              >
+                <img src="./images/mail_2.svg" alt="" width="20" height="20" />
+              </object>
+            </div>
+            <div>
+              <p class="contacts-text-main">Email Us</p>
+              <a  class="contacts-text" href="mailto:cake@veronika.com" style="color:#000" class="contacts-items-link">cake@veronika.com</a>
+            </div>
+          </li>
+        </ul>
+
+        <div style="background-color:#FDF5E7">
+          <!--Форма-->
+          
+              <form id="form">
+                  <div class="form-flex">
+                <!--Створюємо поле для введення тексту-->
+                <input type="text" id="name" placeholder="Name" class="form-input"/>
+                <!--Створюємо поле для введення електронної пошти-->
+                <input type="email" id="email" placeholder="Email" class="form-input"/>
+                <input type="text" id="subject" placeholder="Subject" class="form-input"/>
+              </div>
+                <!--Створюємо багаторядкове поле для введення тексту-->
+                <textarea
+                class="form-textarea"
+                  name="message"
+                  row="10"
+                  cols="30"
+                  placeholder="Subject"
+                ></textarea
+                ><br />
+        
+                <!--Створюємо кнопку.
+                          Коли натиснемо кнопку зʼвиться повідомлення, що лист надіслано-->
+                          <div class="form-btn-flex">
+                <button class="form-btn" type="submit" onclick="alert('Your message has been sent!')">
+                  Send Message
+                </button>
+              </div>
+              </form>
+        
+      </div>
+    
+      </section>
+    </main>
+
+    <!--Футер (підвал) сайту-->
+    <footer class="footer ">
+          <!--Меню підвалу.
+            Коли натискаємо на елемент меню, нас перекидає на початок відповідного розділу.
+            Маємо 4 однотипні елементи, тому робимо через невпорядкований список.-->
+          <div class="footer-center">
+      <ul class="menu-footer">
+          <li><a class="footer-menu first-element" href="#services">Services</a></li>
+          <li><a  class="footer-menu" href="#advantages">Advantages</a></li>
+          <li><a  class="footer-menu" href="#reviews">Reviews</a></li>
+          <li><a  class="footer-menu last-element" href="#contacts">Contacts</a></li>
+        </ul>
+        </div>
+      <p class="text-footer">Developed By
+        <span class="text"> Veronika Lushnei </span>
+      </p>
+  </footer>
+  </body>
+  </body>
+  <script src="./js/slider.js"></script>
+</body>
+</html>
